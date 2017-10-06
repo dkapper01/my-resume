@@ -6,10 +6,10 @@ export const PERSON = {
     last: 'Kapper',
   },
   about: 'Hi, my name is Daniel. I\'m A web developer who loves learning, entrepreneurship, and building amazing things',
-  position: 'Software Developer',
+  position: 'Web Developer',
   birth: {
-    year: 1990,
-    location: 'New York'
+    year: 1989,
+    location: 'St. Louis, MO'
   },
   experience: [{
       company: 'Company A',
@@ -77,12 +77,12 @@ export const PERSON = {
   ],
   skillDescription: 'Also proficient in Adobe Photoshop and Illustrator, grew up bilingual (English and Klingon).',
   contact: {
-    email: 'john.doe@email.com',
-    phone: '0123 456789',
-    street: '1234 Broadway',
-    city: 'New York',
-    website: 'johndoe.com',
-    github: 'johnyD'
+    email: 'dkapper01@gmail.com',
+    phone: '314 226-7386',
+    street: '1884 Columbia Rd NW #905',
+    city: 'Washington D.C.',
+    website: 'danielkapper.com',
+    github: 'dkapper01'
   },
   lang: 'en' // en, de, fr, pt, cn, it, es, th, pt-br, ru, sv, id, hu
 };
