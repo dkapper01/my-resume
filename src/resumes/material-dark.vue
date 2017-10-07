@@ -452,7 +452,7 @@ h4 {
   }
 }
 #myselfpic {
-  background-image:url('../assets/person.jpg');
+  background-image:url('../assets//profile-images/me-cartoon.jpg');
   color:black;
 }
 #githubIcon {
