@@ -12,34 +12,34 @@ export const PERSON = {
     location: 'St. Louis, MO'
   },
   experience: [{
-      company: 'Company A',
-      position: 'Developer',
-      timeperiod: 'since January 2016',
+      company: 'MediMode App',
+      position: 'Co-founder',
+      timeperiod: 'since January 2017',
       description: 'Programming and watching cute cat videos.'
     },
     {
-      company: 'Company B',
+      company: 'Winco',
       position: 'Frontend Developer',
       timeperiod: 'January 2015 - December 2015',
-      description: 'Fulfillment of extremely important tasks.'
+      description: 'Responsible for training and supervising my team members. Leading my team to meet weekly deadlines. Leading my team to meet weekly deadlines.Leading my team to meet weekly deadlines. Leading my team to meet weekly deadlines.'
     },
-    {
-      company: 'Company C',
-      position: 'Trainee',
-      timeperiod: 'March 2014 - December 2014',
-      description: 'Making coffee and baking cookies.'
-    }
+    // {
+    //   company: 'Company C',
+    //   position: 'Trainee',
+    //   timeperiod: 'March 2014 - December 2014',
+    //   description: 'Making coffee and baking cookies.'
+    // }
   ],
   education: [{
       degree: 'Master of Arts',
       timeperiod: 'March 2012 - December 2013',
       description: 'Major in Hacking and Computer Penetration, University A, New York, USA.'
     },
-    {
-      degree: 'Bachelor of Science',
-      timeperiod: 'March 2009 - December 2011',
-      description: 'Major in Engineering, University B, Los Angeles, USA.'
-    }
+    // {
+    //   degree: 'Bachelor of Science',
+    //   timeperiod: 'March 2009 - December 2011',
+    //   description: 'Major in Engineering, University B, Los Angeles, USA.'
+    // }
   ],
   // skill level goes 0 to 100
   skills: [{
@@ -54,26 +54,27 @@ export const PERSON = {
       name: 'JavaScript',
       level: '97'
     },
+    // {
+    //   name: 'Node.js',
+    //   level: '50'
+    // },
+    // {
+    //   name: 'Angular 2',
+    //   level: '60'
+    // },
+    // {
+    //   name: 'TypeScript',
+    //   level: '80'
+    // },
     {
-      name: 'Node.js',
-      level: '93'
-    },
-    {
-      name: 'Angular 2',
-      level: '60'
-    },
-    {
-      name: 'TypeScript',
-      level: '80'
-    },
-    {
-      name: 'ES.Next',
+      name: 'Ruby On Rails',
       level: '70'
-    },
-    {
-      name: 'Docker',
-      level: '99'
     }
+    // ,
+    // {
+    //   name: 'Docker',
+    //   level: '99'
+    // }
   ],
   skillDescription: 'Also proficient in Adobe Photoshop and Illustrator, grew up bilingual (English and Klingon).',
   contact: {

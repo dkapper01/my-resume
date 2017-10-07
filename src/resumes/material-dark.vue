@@ -98,6 +98,17 @@
       <div>{{person.position}}</div>
     </div>
 
+    <div class="section-headline">{{ lang.headings.projects }}</div>
+    <div class="block" v-for="experience in person.experience">
+      <div class="block-helper"></div>
+      <div class="headline">{{experience.position}} - {{experience.company}}</h3>
+        <div class="subheadline">{{experience.timeperiod}}</div>
+        <p class="info">
+          {{experience.description}}
+        </p>
+      </div>
+    </div>
+
     <div class="section-headline">{{ lang.headings.experience }}</div>
     <div class="block" v-for="experience in person.experience">
       <div class="block-helper"></div>
@@ -108,6 +119,7 @@
         </p>
       </div>
     </div>
+
     <div class="section-headline">{{ lang.headings.education }}</div>
     <div class="block" v-for="education in person.education">
       <div class="block-helper"></div>
