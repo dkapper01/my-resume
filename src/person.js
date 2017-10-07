@@ -58,18 +58,18 @@ export const PERSON = {
     //   name: 'Node.js',
     //   level: '50'
     // },
-    // {
-    //   name: 'Angular 2',
-    //   level: '60'
-    // },
-    // {
-    //   name: 'TypeScript',
-    //   level: '80'
-    // },
+    {
+      name: 'Bootstrap',
+      level: '90'
+    },
     {
       name: 'Ruby On Rails',
       level: '70'
     }
+    {
+      name: 'PostgresSQL',
+      level: '80'
+    },
     // ,
     // {
     //   name: 'Docker',
