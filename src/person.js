@@ -19,7 +19,7 @@ export const PERSON = {
     },
     {
       company: 'Winco',
-      position: 'Frontend Developer',
+      position: 'Supervisor',
       timeperiod: 'January 2015 - December 2015',
       description: 'Responsible for training and supervising my team members. Leading my team to meet weekly deadlines. Leading my team to meet weekly deadlines.Leading my team to meet weekly deadlines. Leading my team to meet weekly deadlines.'
     },
@@ -65,7 +65,7 @@ export const PERSON = {
     {
       name: 'Ruby On Rails',
       level: '70'
-    }
+    },
     {
       name: 'PostgresSQL',
       level: '80'

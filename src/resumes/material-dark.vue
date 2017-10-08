@@ -3,6 +3,7 @@
   <div class="leftCol m_box">
     <div class="shadow"></div>
     <div class="heading" id="myselfpic">
+      <!-- <img src="../assets//profile-images/me-cartoon.jpg" width="300px" height="280px"> -->
     </div>
     <div class="section-headline">
       {{ lang.headings.contact }}
@@ -151,6 +152,7 @@ export default Vue.component(name, getVueOptions(name));
 a {
   cursor:pointer;
 }
+
 .description-personal {
   margin-left:20px;
   margin-top:20px;
@@ -452,7 +454,8 @@ h4 {
   }
 }
 #myselfpic {
-  background-image:url('../assets//profile-images/me-cartoon.jpg');
+  padding-top: 20px; 
+  background-image:url('../assets//profile-images/m3.png');
   color:black;
 }
 #githubIcon {
