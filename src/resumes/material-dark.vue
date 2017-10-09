@@ -3,7 +3,6 @@
   <div class="leftCol m_box">
     <div class="shadow"></div>
     <div class="heading" id="myselfpic">
-      <!-- <img src="../assets//profile-images/me-cartoon.jpg" width="300px" height="280px"> -->
     </div>
     <div class="section-headline">
       {{ lang.headings.contact }}
@@ -100,16 +99,14 @@
     </div>
 
     <div class="section-headline">{{ lang.headings.projects }}</div>
-    <div class="block" v-for="experience in person.experience">
+    <div class="block" v-for="project in person.project">
       <div class="block-helper"></div>
-      <div class="headline">{{experience.position}} - {{experience.company}}</h3>
-        <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
-        </p>
-      </div>
+      <div class="headline">{{project.name}}</div>
+      <p class="info">
+        {{project.built}}
+      </p>
     </div>
-
+    
     <div class="section-headline">{{ lang.headings.experience }}</div>
     <div class="block" v-for="experience in person.experience">
       <div class="block-helper"></div>
