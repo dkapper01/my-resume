@@ -100,7 +100,7 @@
 
     <div class="section-headline">{{ lang.headings.projects }}</div>
     <div class="block" v-for="project in person.project">
-      <div class="block-helper"></div>
+      <!-- <div class="block-helper"></div> -->
       <div class="headline">{{project.name}}</div>
       <p class="info">
         {{project.one}} <br>
@@ -112,7 +112,7 @@
     </div>
     <div class="section-headline">{{ lang.headings.experience }}</div>
     <div class="block" v-for="experience in person.experience">
-      <div class="block-helper"></div>
+      <!-- <div class="block-helper"></div> -->
       <div class="headline">{{experience.company}} - {{experience.position}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
         <p class="info">
@@ -131,7 +131,7 @@
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
       <p class="info">
-        {{education.timeperiod}}, {{education.description}}
+        {{education.timeperiod}} {{education.description}}
       </p>
     </div>
   </div>
@@ -289,7 +289,8 @@ h4 {
     margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
-    /*box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);*/
+    /*box-shadow:10px 0px 0px 10px rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0.12);    */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
     .headline {
       font-weight:300;
       display:block;

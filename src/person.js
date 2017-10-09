@@ -13,25 +13,25 @@ export const PERSON = {
   },
 
   project: [{
-      name: 'Dice Game',
-      one: 'Designed a dynamic and browser compatible game with HTML and CSS.',
-      two: 'Manipulated the dom with Javascript ad Jquery.',
-      three: 'Integrated multiplayer functionality into the web app.',
-      fore: '  Used git and github to deploy website online.'
-    },
-    {
       name: 'Kiwi Social',
-      one: 'Used Ruby on Rails to develop this complex web application.',
+      one: 'Used Ruby on Rails to develop a complex web application.',
       two: 'Used multiple gems including devise and rails_admin.',
       three: 'Utilized Bootstraps design and responsive grid.', 
       fore: 'Implemented a relational database where users can follow each other.',
       five: 'Deployed to Heroku using postgreSQL.'
+    },
+    {
+      name: 'Dice Game',
+      one: 'Designed a dynamic and browser compatible game with HTML and CSS.',
+      two: 'Manipulated the dom with Javascript ad Jquery.',
+      three: 'Integrated multiplayer functionality',
+      fore: 'Used git and github to deploy the game online.'
     }]
   ,
   experience: [{
       company: 'MediMode App',
       position: 'Co-founder',
-      timeperiod: 'since January 2017',
+      timeperiod: 'January 2017 - June 2017',
       description: 'Designed a customer development program to measure how much value the app was creating for its users.',
       one: 'Acquired evidence to help make decision to pivot or proceed.',
       two: 'Worked closely with people in a fast moving team.',
@@ -40,22 +40,18 @@ export const PERSON = {
     {
       company: 'Winco',
       position: 'Team Leader',
-      timeperiod: 'January 2015 - December 2015',
-      description: 'Led my team of 5 employees to meet daily and weekly deadlines.',
+      timeperiod: 'May 2015 - August 2017',
+      description: 'Led a team of 5 employees to meet daily and weekly deadlines.',
       one: 'Took full responsibility in my department’s successes and failures.',
       two: 'Built a solid and helpful team environment.', 
+      three: 'Maintained a trusting relationship with management'
     }
   ],
   education: [{
-      degree: 'Master of Arts',
-      timeperiod: 'March 2012 - December 2013',
-      description: 'Major in Hacking and Computer Penetration, University A, New York, USA.'
-    },
-    // {
-    //   degree: 'Bachelor of Science',
-    //   timeperiod: 'March 2009 - December 2011',
-    //   description: 'Major in Engineering, University B, Los Angeles, USA.'
-    // }
+      degree: 'Computer Science',
+      timeperiod: '',
+      description: 'Missouri State University, August 2008 - June 2011. Successfully completed three years of undergraduate studies, GPA 3.4. Withdrew in good standing for financial reasons.'
+    }
   ],
   // skill level goes 0 to 100
   skills: [{
