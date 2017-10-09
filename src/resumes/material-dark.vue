@@ -103,17 +103,25 @@
       <div class="block-helper"></div>
       <div class="headline">{{project.name}}</div>
       <p class="info">
-        {{project.built}}
+        {{project.one}} <br>
+        {{project.two}} <br>
+        {{project.three}} <br>
+        {{project.fore}} <br>
+        {{project.five}}
       </p>
     </div>
-    
     <div class="section-headline">{{ lang.headings.experience }}</div>
     <div class="block" v-for="experience in person.experience">
       <div class="block-helper"></div>
-      <div class="headline">{{experience.position}} - {{experience.company}}</h3>
+      <div class="headline">{{experience.company}} - {{experience.position}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
         <p class="info">
-          {{experience.description}}
+          {{experience.description}} <br>
+          {{experience.one}} <br>
+          {{experience.two}} <br>
+          {{experience.three}}
+          <!-- {{experience.fore}} <br> -->
+          <!-- {{experience.five}}  -->
         </p>
       </div>
     </div>
@@ -157,6 +165,7 @@ a {
   text-align:justify;
   font-family:Roboto;
 }
+
 .title {
   right:25px;
   padding-left:20px;
@@ -166,10 +175,10 @@ a {
     text-transform:uppercase;
     display:block;
     font-size:1.17em;
-    -webkit-margin-before:1em;
+    /*-webkit-margin-before:1em;
     -webkit-margin-after:1em;
     -webkit-margin-start:0;
-    -webkit-margin-end:0;
+    -webkit-margin-end:0;*/
     color:white;
     color:rgba(0,0,0,0.7);
     padding-top:0;
@@ -193,9 +202,10 @@ a {
     display:block;
     font-size:0.67em;
     font-size:10pt;
-    -webkit-margin-before:2.33em;
+   /* -webkit-margin-before:2.33em;
     -webkit-margin-start:0;
-    -webkit-margin-end:0;
+    -webkit-margin-end:0;*/
+    margin-bottom: 10px; 
     padding-top:0;
     text-transform:uppercase;
     opacity:0.8;
@@ -208,8 +218,8 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:40px;
-  margin-bottom:20px;
+  margin-top:8px;
+  margin-bottom:8px;
   color:#3f3d3c;
 }
 .c {
@@ -275,11 +285,11 @@ h4 {
     width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
+    padding:15px;
     margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    /*box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);*/
     .headline {
       font-weight:300;
       display:block;

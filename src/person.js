@@ -13,25 +13,37 @@ export const PERSON = {
   },
 
   project: [{
-      name: 'Pig(Dice Game)',
-      built: 'Designed a dynamic and browser compatible game with HTML and CSS. Manipulated the dom with Javascript ad Jquery. Integrated multiplayer functionality into the web app. Used git and github to deploy website online.'
+      name: 'Dice Game',
+      one: 'Designed a dynamic and browser compatible game with HTML and CSS.',
+      two: 'Manipulated the dom with Javascript ad Jquery.',
+      three: 'Integrated multiplayer functionality into the web app.',
+      fore: '  Used git and github to deploy website online.'
     },
     {
       name: 'Kiwi Social',
-      built: 'Used Ruby on Rails to develop this complex web application. Used multiple gems including devise and rails_admin. Utilized Bootstraps design and responsive grid. Implemented a relational database where users can follow each other.Deployed to Heroku using postgreSQL.'
+      one: 'Used Ruby on Rails to develop this complex web application.',
+      two: 'Used multiple gems including devise and rails_admin.',
+      three: 'Utilized Bootstraps design and responsive grid.', 
+      fore: 'Implemented a relational database where users can follow each other.',
+      five: 'Deployed to Heroku using postgreSQL.'
     }]
   ,
   experience: [{
       company: 'MediMode App',
       position: 'Co-founder',
       timeperiod: 'since January 2017',
-      description: 'Designed a customer development program to measure how much value the app was creating for its users. Acquired evidence to help make decision to pivot or proceed. Worked closely with people in a fast moving team. Communicated updates in daily scrum meetings.'
+      description: 'Designed a customer development program to measure how much value the app was creating for its users.',
+      one: 'Acquired evidence to help make decision to pivot or proceed.',
+      two: 'Worked closely with people in a fast moving team.',
+      three: 'Communicated updates in daily scrum meetings.', 
     },
     {
       company: 'Winco',
       position: 'Team Leader',
       timeperiod: 'January 2015 - December 2015',
-      description: 'Led my team of 5 employees to meet daily and weekly deadlines. Took full responsibility in my department’s successes and failures. Built a solid and helpful team environment.'
+      description: 'Led my team of 5 employees to meet daily and weekly deadlines.',
+      one: 'Took full responsibility in my department’s successes and failures.',
+      two: 'Built a solid and helpful team environment.', 
     }
   ],
   education: [{
