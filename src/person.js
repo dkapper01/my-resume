@@ -50,15 +50,15 @@ export const PERSON = {
   // skill level goes 0 to 100
   skills: [{
       name: 'HTML5',
-      level: '90'
+      // level: '90'
     },
     {
       name: 'CSS3',
-      level: '90'
+      // level: '90'
     },
     {
       name: 'JavaScript',
-      level: '80'
+      // level: '80'
     },
     // {
     //   name: 'Node.js',
@@ -66,15 +66,15 @@ export const PERSON = {
     // },
     {
       name: 'Bootstrap',
-      level: '90'
+      // level: '90'
     },
     {
       name: 'Ruby On Rails',
-      level: '70'
+      // level: '70'
     },
     {
       name: 'PostgresSQL',
-      level: '30'
+      // level: '30'
     },
     // ,
     // {

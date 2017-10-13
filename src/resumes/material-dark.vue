@@ -116,7 +116,7 @@
           <span>{{skill.name}}&nbsp;</span>
           <div class="progress">
             <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
+              <!-- <i class="fa fa-circle"></i> -->
             </div>
           </div>
         </div>
