@@ -26,7 +26,7 @@
       </div>
     </div>
  -->
-  <a :href="person.contact.website" target="_blank">
+  <a href="danielkapper.com" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="material-icons">language</i>
@@ -160,18 +160,44 @@ JavaScript and jQuery.
       </p>
     </div>
 
-    <div class="section-headline">{{ lang.headings.experience }}</div>
-    <div class="block" v-for="experience in person.experience">
-      <!-- <div class="block-helper"></div> -->
-      <div class="headline">{{experience.company}} - {{experience.position}}</h3>
-        <div class="subheadline">{{experience.timeperiod}}</div>
+    <div class="section-headline">Professional Experience</div>
+
+    <div class="block">
+
+      <div class="headline">MedModo App - Co-founder</h3>
+        <div class="subheadline">January 2017 to June 2017</div>
+        
         <p class="info">
-          {{experience.description}} <br>
-          {{experience.one}} <br>
-          {{experience.two}} <br>
-          {{experience.three}}
-          <!-- {{experience.fore}} <br> -->
-          <!-- {{experience.five}}  -->
+          <ul class="a">
+            <li>Designed a customer development program that measured how much value the app created for users.</li>
+            <li>
+              Acquired evidence to assist with deciding whether to pivot or proceed.
+            </li>
+            <li>
+              Functioned as an enthusiastic member of the design team in a fast-paced environment.
+            </li>
+            <li>
+              Communicated daily updates to team members in scrum meetings.
+            </li>
+          </ul>
+          
+        </p>
+      </div>
+
+      <div class="headline">Winco Windows, Inc. - Manager</h3>
+        <div class="subheadline">January 2017 to June 2017</div>
+        
+        <p class="info">
+          <ul class="a">
+            <li>Managed a team of five employees responsible for meeting daily and weekly deadlines by building a solid and helpful team environment.</li>
+            <li>
+              Trained and evaluated employee performance.
+            </li>
+            <li>
+              Maintained inventory records and placed orders for new materials.
+            </li>
+          </ul>
+          
         </p>
       </div>
     </div>
@@ -210,6 +236,10 @@ a {
 .a {
   list-style-type: square;
   margin-left: 20px; 
+  /*padding: 0; */
+  li {
+    padding: 0; 
+  }
 }
 
 .description-personal {
@@ -350,7 +380,7 @@ h4 {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
     .headline {
       font-weight:300;
-      display:block;
+      display:inline-block;
       font-size:15px;
       color:rgba(0,0,0,0.870588);
     }
