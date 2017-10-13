@@ -2,41 +2,37 @@
 <div class="resume">
   <div class="leftCol m_box">
     <div class="shadow"></div>
+    <div class="title">
+
+      <h2>{{person.name.first}} {{person.name.middle}}  
+        {{person.name.last}}</h2>
+      <div>{{person.position}}</div>
+
+    </div>
+
     <div class="heading" id="myselfpic">
     </div>
     <div class="section-headline">
       {{ lang.headings.contact }}
     </div>
-    <div class="item">
+    <!-- <div class="item">
       <div class="icon">
         <i class="material-icons">account_circle</i>
       </div>
       <div class="text">
         <ul>
-          <li> Born {{person.birth.year}} in {{person.birth.location}}</li>
+          <li> Born in {{person.birth.year}} in {{person.birth.location}}</li>
         </ul>
       </div>
     </div>
-
-    <div class="item">
-      <div class="icon">
-        <i class="material-icons">location_city</i>
-      </div>
-      <div class="text">
-        <ul>
-          <li>{{person.contact.street}}</li>
-          <li>{{person.contact.city}}</li>
-        </ul>
-      </div>
-    </div>
-
-    <a :href="'tel:'+person.contact.phone">
+ -->
+  <a :href="person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
-          <i class="material-icons">phone</i>
+          <i class="material-icons">language</i>
         </div>
         <div class="text">
-          {{person.contact.phone}}
+          <span>{{person.contact.website}}</span>
         </div>
       </div>
     </a>
@@ -52,6 +48,8 @@
       </div>
     </a>
 
+    
+
     <a :href="'https://github.com/'+person.contact.github" target="_blank">
       <div class="item">
         <div class="icon">
@@ -64,7 +62,41 @@
       </div>
     </a>
 
-    <a :href="person.contact.website" target="_blank">
+    <a :href="'tel:'+person.contact.phone">
+      <div class="item">
+        <div class="icon">
+          <i class="material-icons">phone</i>
+        </div>
+        <div class="text">
+          {{person.contact.phone}}
+        </div>
+      </div>
+    </a>
+
+    <div class="item">
+      <div class="icon">
+        <i class="material-icons">location_city</i>
+      </div>
+      <div class="text">
+        <ul>
+          <li>{{person.contact.street}}</li>
+          <li>{{person.contact.city}}</li>
+        </ul>
+      </div>
+    </div>
+
+   <!--  <a :href="'mailto:'+person.contact.email">
+      <div class="item">
+        <div class="icon">
+          <i class="material-icons">email</i>
+        </div>
+        <div class="text">
+          {{person.contact.email}}
+        </div>
+      </div>
+    </a> -->
+
+    <!-- <a :href="person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="material-icons">language</i>
@@ -73,7 +105,7 @@
           <span>{{person.contact.website}}</span>
         </div>
       </div>
-    </a>
+    </a> -->
 
     <div class="item last">
       <div class="section-headline">
@@ -93,23 +125,41 @@
   </div>
 
   <div class="rightCol">
-    <div class="title">
+    <!-- <div class="title">
       <h2>{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
       <div>{{person.position}}</div>
-    </div>
+    </div> -->
+    <div class="section-headline">Professional Profile</div>
+      <div class="block">
+          <div class="info">
+             <p>A passionate and self-motivated learner that is dedicated to continuously expanding my skill set and experience as a Web Developer. Skilled and detail oriented coder with the ability to effectively communicate ideas, problems, and solutions individually or in collaboration with a team. Strategic thinker who is dedicated to continuous learning.</p>
+          </div>
+      </div>
 
-    <div class="section-headline">{{ lang.headings.projects }}</div>
-    <div class="block" v-for="project in person.project">
+    <div class="section-headline">Key Projects</div>
+    <div class="block">
       <!-- <div class="block-helper"></div> -->
-      <div class="headline">{{project.name}}</div>
+      <!-- <div class="headline">{{project.name}}</div> -->
       <p class="info">
-        {{project.one}} <br>
+        <!-- {{project.one}} <br>
         {{project.two}} <br>
         {{project.three}} <br>
         {{project.fore}} <br>
-        {{project.five}}
+        {{project.five}} -->
+        <ul>
+          <li>Developed a complex social media application called KiwiSocial using
+Ruby on Rails that utilized multiple gems, including Devise and Rails
+Admin, to implement a relational database where users could follow each
+other</li>
+          <li>
+            Designed a dynamic, browser compatible dice game using HTML and CSS
+which integrated multiplayer functionality by manipulating the DOM with
+JavaScript and jQuery.
+          </li>
+        </ul>
       </p>
     </div>
+
     <div class="section-headline">{{ lang.headings.experience }}</div>
     <div class="block" v-for="experience in person.experience">
       <!-- <div class="block-helper"></div> -->
@@ -179,11 +229,13 @@ a {
     -webkit-margin-after:1em;
     -webkit-margin-start:0;
     -webkit-margin-end:0;*/
-    color:white;
-    color:rgba(0,0,0,0.7);
-    padding-top:0;
+    /*color:white;*/
+    /*color:rgba(0,0,0,0.7);*/
+    /*color: #ffffff; */
+    /*padding-top:0;*/
+    padding: 0; 
     margin-top:0;
-    letter-spacing:10px;
+    letter-spacing:5px;
     font-weight:400;
   }
   div {
@@ -196,9 +248,10 @@ a {
     font-weight:500;
     letter-spacing:2px;
     letter-spacing:3px;
-    color:white;
-    color:#16151c;
-    color:rgba(63,61,60,0.71);
+    /*color:white;*/
+    /*color:#16151c;*/
+    /*color:rgba(63,61,60,0.71);*/
+    /*color: red;*/
     display:block;
     font-size:0.67em;
     font-size:10pt;
@@ -228,13 +281,13 @@ a {
 li {
   margin:0;
   padding:0;
-  list-style-type:none;
+  /*list-style-type:none;*/
   padding-top:9px;
 }
 ul {
   margin:0;
   padding:0;
-  list-style-type:none;
+  /*list-style-type:none;*/
 }
 p {
   margin-top:0;
@@ -307,7 +360,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:20px;
+      /*padding-top:10px;*/
     }
     .icon {
       width:16%;
@@ -463,8 +516,11 @@ h4 {
 }
 #myselfpic {
   padding-top: 20px; 
+  /*border: 5px solid black;*/
+  /*border-bottom: 80px solid black;*/
   background-image:url('../assets//profile-images/m3.png');
   color:black;
+  margin-bottom: 15px; 
 }
 #githubIcon {
   width:25px;

@@ -12,21 +12,15 @@ export const PERSON = {
     location: 'St. Louis, MO'
   },
 
-  project: [{
-      name: 'Kiwi Social',
+  project: {
+      // name: 'Kiwi Social',
+
       one: 'Used Ruby on Rails to develop a complex web application.',
       two: 'Used multiple gems including devise and rails_admin.',
       three: 'Utilized Bootstraps design and responsive grid.', 
       fore: 'Implemented a relational database where users can follow each other.',
       five: 'Deployed to Heroku using postgreSQL.'
-    },
-    {
-      name: 'Dice Game',
-      one: 'Designed a dynamic and browser compatible game with HTML and CSS.',
-      two: 'Manipulated the dom with Javascript ad Jquery.',
-      three: 'Integrated multiplayer functionality',
-      fore: 'Used git and github to deploy the game online.'
-    }]
+    }
   ,
   experience: [{
       company: 'MediMode App',
@@ -56,15 +50,15 @@ export const PERSON = {
   // skill level goes 0 to 100
   skills: [{
       name: 'HTML5',
-      level: '99'
+      level: '90'
     },
     {
       name: 'CSS3',
-      level: '95'
+      level: '90'
     },
     {
       name: 'JavaScript',
-      level: '97'
+      level: '80'
     },
     // {
     //   name: 'Node.js',
@@ -80,7 +74,7 @@ export const PERSON = {
     },
     {
       name: 'PostgresSQL',
-      level: '80'
+      level: '30'
     },
     // ,
     // {
