@@ -44,7 +44,7 @@ export const PERSON = {
   education: [{
       degree: 'Computer Science',
       timeperiod: '',
-      description: 'Missouri State University, August 2008 - June 2011. Successfully completed three years of undergraduate studies, GPA 3.4. Withdrew in good standing for financial reasons.'
+      description: 'Successfully completed 90 credits, including 27 Computer Science credits. GPA 3.4. Withdrew in good standing for financial reasons.'
     }
   ],
   // skill level goes 0 to 100

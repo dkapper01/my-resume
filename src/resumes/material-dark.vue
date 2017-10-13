@@ -131,9 +131,9 @@
     </div> -->
     <div class="section-headline">Professional Profile</div>
       <div class="block">
-          <div class="info">
+          <!-- <div class="info"> -->
              <p>A passionate and self-motivated learner that is dedicated to continuously expanding my skill set and experience as a Web Developer. Skilled and detail oriented coder with the ability to effectively communicate ideas, problems, and solutions individually or in collaboration with a team. Strategic thinker who is dedicated to continuous learning.</p>
-          </div>
+          <!-- </div> -->
       </div>
 
     <div class="section-headline">Key Projects</div>
@@ -149,7 +149,7 @@
         <ul class="a">
           <li>Developed a complex social media application called KiwiSocial using
 Ruby on Rails that utilized multiple gems, including Devise and Rails
-Admin, to implement a relational database where users could follow each
+Admin. Also implemented a relational database where users could follow each
 other</li>
           <li>
             Designed a dynamic, browser compatible dice game using HTML and CSS
@@ -164,7 +164,7 @@ JavaScript and jQuery.
 
     <div class="block">
 
-      <div class="headline">MedModo App - Co-founder</h3>
+      <div class="headline">MedModo App - <i>Co-founder</i></h3>
         <div class="subheadline">January 2017 to June 2017</div>
         
         <p class="info">
@@ -174,9 +174,9 @@ JavaScript and jQuery.
               Acquired evidence to assist with deciding whether to pivot or proceed.
             </li>
             <li>
-              Functioned as an enthusiastic member of the design team in a fast-paced environment.
+              Functioned as an enthusiastic member of the team in a fast-paced environment.
             </li>
-            <li>
+            <li class="b">
               Communicated daily updates to team members in scrum meetings.
             </li>
           </ul>
@@ -184,8 +184,8 @@ JavaScript and jQuery.
         </p>
       </div>
 
-      <div class="headline">Winco Windows, Inc. - Manager</h3>
-        <div class="subheadline">January 2017 to June 2017</div>
+      <div class="headline">Winco Windows, Inc. - <i>Manager</i></h3>
+        <div class="subheadline">May 2015 to August 2017</div>
         
         <p class="info">
           <ul class="a">
@@ -205,9 +205,12 @@ JavaScript and jQuery.
     <div class="section-headline">{{ lang.headings.education }}</div>
     <div class="block" v-for="education in person.education">
       <div class="block-helper"></div>
-      <div class="headline">{{education.degree}}</div>
+      <div class="headline">Missouri State University - <i>Computer Science</i></div>
+      <div class="subheadline">
+        2008 - 2011
+      </div>
       <p class="info">
-        {{education.timeperiod}} {{education.description}}
+        {{education.description}}
       </p>
     </div>
   </div>
@@ -240,6 +243,9 @@ a {
   li {
     padding: 0; 
   }
+}
+.b {
+  margin-bottom: 15px; 
 }
 
 .description-personal {
@@ -305,7 +311,7 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:8px;
+  margin-top:20px;
   margin-bottom:8px;
   color:#3f3d3c;
 }
@@ -318,6 +324,7 @@ li {
   /*list-style-type:none;*/
   padding-top:9px;
 }
+
 ul {
   margin:0;
   padding:0;
@@ -325,7 +332,7 @@ ul {
 }
 p {
   margin-top:0;
-  margin-bottom:25px;
+  margin-bottom:0;
   font-family:'Roboto', sans-serif;
   font-weight:300;
   font-size:10pt;
@@ -377,18 +384,22 @@ h4 {
     margin-bottom:5px;
     display:inline-block;
     /*box-shadow:10px 0px 0px 10px rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0.12);    */
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+    /*box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);*/
     .headline {
-      font-weight:300;
+      font-weight:400;
       display:inline-block;
       font-size:15px;
       color:rgba(0,0,0,0.870588);
+      i {
+        font-weight:300; 
+      }
     }
     .subheadline {
       color:rgba(0,0,0,0.541176);
       display:block;
       font-size:14px;
       font-weight:300;
+      margin-bottom: 8px; 
     }
     .info {
       font-size:14px;
