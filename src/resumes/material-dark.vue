@@ -146,7 +146,7 @@
         {{project.three}} <br>
         {{project.fore}} <br>
         {{project.five}} -->
-        <ul>
+        <ul class="a">
           <li>Developed a complex social media application called KiwiSocial using
 Ruby on Rails that utilized multiple gems, including Devise and Rails
 Admin, to implement a relational database where users could follow each
@@ -206,6 +206,10 @@ export default Vue.component(name, getVueOptions(name));
 }
 a {
   cursor:pointer;
+}
+.a {
+  list-style-type: square;
+  margin-left: 20px; 
 }
 
 .description-personal {
