@@ -61,6 +61,10 @@ export const PERSON = {
       // level: '80'
     },
     {
+      name: 'SASS',
+      // level: '90'
+    },
+    {
       name: 'JQuery',
       // level: '90'
     },
