@@ -57,12 +57,12 @@ export const PERSON = {
       // level: '90'
     },
     {
-      name: 'Bootstrap',
-      // level: '80'
+      name: 'Sass',
+      // level: '90'
     },
     {
-      name: 'SASS',
-      // level: '90'
+      name: 'Bootstrap',
+      // level: '80'
     },
     {
       name: 'JQuery',
