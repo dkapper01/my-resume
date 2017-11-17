@@ -57,23 +57,23 @@ export const PERSON = {
       // level: '90'
     },
     {
-      name: 'JavaScript',
+      name: 'Bootstrap',
       // level: '80'
     },
-    // {
-    //   name: 'Node.js',
-    //   level: '50'
-    // },
     {
-      name: 'Bootstrap',
+      name: 'JQuery',
       // level: '90'
     },
     {
-      name: 'Ruby On Rails',
+      name: 'JavaScript',
+      // level: '90'
+    },
+    {
+      name: 'React',
       // level: '70'
     },
     {
-      name: 'PostgresSQL',
+      name: 'Git',
       // level: '30'
     },
     // ,

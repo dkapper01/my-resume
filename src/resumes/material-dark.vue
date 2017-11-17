@@ -56,7 +56,7 @@
           <i class="fa fa-github"></i>
         </div>
         <div class="text">
-          <span>@{{person.contact.github}}</span>
+          <!-- <span>@{{person.contact.github}}</span> -->
           <span>github.com/{{person.contact.github}}</span>
         </div>
       </div>
@@ -132,7 +132,11 @@
     <div class="section-headline">Professional Profile</div>
       <div class="block">
           <!-- <div class="info"> -->
-             <p>A passionate and self-motivated learner that is dedicated to continuously expanding my skill set and experience as a Web Developer. Skilled and detail oriented coder with the ability to effectively communicate ideas, problems, and solutions individually or in collaboration with a team. Strategic thinker who is dedicated to continuous learning.</p>
+             <p>A passionate and self-motivated learner that is dedicated to continuously 
+               expanding my skill set and experience as a Web Developer. Skilled and detail 
+               oriented coder with the ability to effectively communicate ideas, problems, 
+               and solutions individually or in collaboration with a team. Strategic thinker 
+               who is dedicated to continuous learning.</p>
           <!-- </div> -->
       </div>
 
@@ -147,14 +151,13 @@
         {{project.fore}} <br>
         {{project.five}} -->
         <ul class="a">
-          <li>Developed a complex social media application called KiwiSocial using
-Ruby on Rails that utilized multiple gems, including Devise and Rails
-Admin. Also implemented a relational database where users could follow each
-other</li>
+          <li>Built a website that contains an algorithm written in JavaScript. 
+            The algorithm takes in a ransom note string and another magazines 
+            string to determine if the magazine contains all the letters from the note. </li>
           <li>
             Designed a dynamic, browser compatible dice game using HTML and CSS
-which integrated multiplayer functionality by manipulating the DOM with
-JavaScript and jQuery.
+            which integrated multiplayer functionality by manipulating the DOM with
+            JavaScript and jQuery.
           </li>
         </ul>
       </p>
@@ -163,28 +166,30 @@ JavaScript and jQuery.
     <div class="section-headline">Professional Experience</div>
 
     <div class="block">
-
-      <div class="headline">MedModo App - <i>Co-founder</i></h3>
-        <div class="subheadline">January 2017 to June 2017</div>
+      <div class="headline">Titan House - <i>Consultant</i><span class="subheadline moveOut" style="float:right">Washington, DC</span>
+        <div class="subheadline">November 2017 to Present</div>
         
         <p class="info">
           <ul class="a">
-            <li>Designed a customer development program that measured how much value the app created for users.</li>
+            <li>Thoroughly research private equality firms portfolio companies.</li>
             <li>
-              Acquired evidence to assist with deciding whether to pivot or proceed.
+              Build detailed profiles of chief executive officers working companies. 
             </li>
             <li>
-              Functioned as an enthusiastic member of the team in a fast-paced environment.
+              Effectively manage my own productivity and produced quality.
             </li>
+            <!--
             <li class="b">
               Communicated daily updates to team members in scrum meetings.
-            </li>
+            </li> -->
           </ul>
           
         </p>
       </div>
 
-      <div class="headline">Winco Windows, Inc. - <i>Manager</i></h3>
+     
+
+        <div class="headline moveUp">Winco Windows, Inc. - <i>Manager</i><span class="subheadline" style="float:right">St. Louis, MO</span>
         <div class="subheadline">May 2015 to August 2017</div>
         
         <p class="info">
@@ -200,7 +205,27 @@ JavaScript and jQuery.
           
         </p>
       </div>
-    </div>
+
+         <div class="headline moveUp">MedModo App - <i>Co-founder</i> <span class="subheadline" style="float:right">St. Louis, MO</span>
+        <div class="subheadline">January 2017 to June 2017</div>
+        
+        <p class="info">
+          <ul class="a">
+            <li>Designed a customer development program that measured how much value the app created for users.</li>
+            <li>
+              Acquired evidence to assist with deciding whether to pivot or proceed.
+            </li>
+            <li>
+              Functioned as an enthusiastic member of the team in a fast-paced environment.
+            </li>
+            <li class="b">
+              Communicated daily updates to team members in scrum meetings.
+            </li>
+          </ul>
+        </p>
+      
+      </div>
+  </div>
 
     <div class="section-headline">{{ lang.headings.education }}</div>
     <div class="block" v-for="education in person.education">
@@ -232,6 +257,12 @@ export default Vue.component(name, getVueOptions(name));
 .resume {
   font-family:'Roboto' !important;
   background:#cccccc;
+}
+.moveOut {
+  margin-right: -15px !important; 
+}
+.moveUp {
+  margin-top: 12px; 
 }
 a {
   cursor:pointer;
